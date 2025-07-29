@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+    <title>rock paper scissors</title>
+    <link rel="stylesheet" href="CSS/12-RPS.css">
+ </head>
+   <body>
+    <h1> Rock Paper Scissors</h1>
+    <button onclick="
+
+"class= "move-button js-rb"
+><img src="rock-emoji.png" class="rock"></button>
+
+    <button onclick="
+
+"class= "move-button js-pb"
+  ><img src="paper-emoji.png" class="rock"></button>
+
+    <button onclick="
+
+"class= "move-button js-sb"
+  ><img src="scissors-emoji.png" class="rock"></button>
+
+<p class="js-result result"></p>
+<p class="js-moves"></p>
+<p class="js-score score"></p>
+
+  <button onclick="
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
+  totalScore = 0;
+  localStorage.removeItem('score');
+  updateScoreElement();
+  " class="rs-button">Reset Score</button>
+
+<button class="AP-button" onclick="
+autoPlay();
+">Auto Play</button>
+
+   <script src="JS/12-RPS.js"></script>
+   
+   </body>  
+</html>
